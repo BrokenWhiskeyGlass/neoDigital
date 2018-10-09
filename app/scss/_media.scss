@@ -1,0 +1,290 @@
+@import "vars";
+
+
+@media screen and (max-width: 700px) {
+    /* Header */
+	.header--mobile {
+	  & .navBarContainer {
+		background: black;
+		margin-top: 0;
+		padding-top: 30px;
+		padding-bottom: 10px;
+	  }
+  
+	  & .navigation {
+		overflow: hidden;
+		padding: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		margin-right: 0;
+		top: 70px;
+		left: 0;
+		background: black;
+		height: auto;
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: 100ms;
+		margin-top: 18px;
+		padding-bottom: 3px;
+  
+		&--invisible {
+		  display: none;
+		}
+  
+		&--open {
+		  transform: scaleY(1);
+		}
+  
+  
+		&__item {
+		  position: relative;
+		  text-align: center;
+		  margin: 0;
+  
+  
+		  &--last {
+			border: none;
+  
+  
+			& .navigation__link::after {
+			  display: block;
+			}
+  
+			&:hover, & .navigation__link:focus {
+			  transform: none;
+			}
+  
+		  }
+  
+		}
+	  }
+  
+  
+	  & .logoContainer {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+  
+  
+		&__menuButton {
+		  cursor: pointer;
+		  color: white;
+		  display: block;
+		  font-size: 25px;
+		}
+  
+  
+		&__label {
+		  display: block;
+		  border: 0;
+		  clip: rect(0 0 0 0);
+		  height: 1px;
+		  margin: -1px;
+		  overflow: hidden;
+		  padding: 0;
+		  position: absolute;
+		  width: 1px;
+		  white-space: nowrap;
+		}
+	  }
+    }
+    
+    /* HeadFooter */
+    .headFooter {
+  
+        &__container {
+          flex-direction: column;
+        }
+    
+    
+        &__section {
+          width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+          box-sizing: border-box;
+        }
+    
+      }
+
+    /* Service Block */
+    .serviceNavTabs {
+        display: none;
+      }
+    
+      .serviceTabs {
+        padding-top: 40px;
+        flex-direction: column;
+    
+    
+        &__tab {
+          padding-left: 30px;
+          padding-right: 30px;
+          position: relative;
+          opacity: 1;
+          margin-bottom: 30px;
+        }
+    
+    
+        &__title {
+          font-size: 36px;
+        }
+    
+      }
+
+    /* Team Block */
+    .team__container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+      }
+    
+      .member {
+        height: 550px;
+        width: 100%;
+      }
+
+    /* Footer */
+    .footer {
+  
+        &__container {
+          flex-direction: column;
+          align-items: center;
+        }
+    
+    
+        &__email, &__tel, &__address {
+          margin-bottom: 10px;
+        }
+    
+      }
+    }
+
+  @media screen and (max-width: 970px) {
+  
+	.serviceTabs {
+  
+	  &__img {
+		display: none;
+	  }
+  
+  
+	  &__content {
+		max-width: 700px;
+	  }
+  
+  
+	  &__title {
+		text-align: center;
+	  }
+  
+	}
+  
+  }
+
+  @media screen and (max-width: 1100px) and (min-width: 701px) {
+  
+	.partners {
+	  padding: 50px 0 50px 0;
+  
+  
+	  &__img {
+		height: calc(100vw/20);
+	  }
+  
+	}
+  
+  }
+  
+  @media screen and (max-width: 700px) and (min-width: 401px) {
+  
+	.partners {
+	  padding: 40px 0 40px 0;
+  
+  
+	  &__img {
+		height: calc(100vw/20);
+	  }
+  
+	}
+  
+  }
+  
+  @media screen and (max-width: 400px) {
+  
+	.partners {
+	  padding: 30px 0 30px 0;
+  
+  
+	  &__img {
+		height: calc(100vw/20);
+	  }
+  
+	}
+  
+  }
+
+  @media screen and (max-width: 1180px) and (min-width: 641px) {
+  
+	.find {
+	  &__imgs {
+		width: 640px;
+	  }
+  
+  
+	  &__img {
+		padding: 20px;
+		margin: 0;
+	  }
+  
+	}
+  
+  }
+  
+  @media screen and (max-width: 640px) {
+  
+	.find {
+	  &__imgs {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	  }
+  
+  
+	  &__img {
+		margin-bottom: 30px;
+  
+  
+		&:last-of-type {
+		  margin-bottom: 0;
+		}
+	  }
+  
+	}
+  
+  }
+  
+  @media screen and (max-width: 510px) {
+  
+	.find {
+	  &__buttons {
+		flex-direction: column;
+	  }
+  
+  
+	  &__button {
+		margin-bottom: 20px;
+		margin-right: 0;
+  
+  
+		&:last-of-type {
+		  margin-bottom: 0;
+		}
+	  }
+  
+	}
+  
+  }
